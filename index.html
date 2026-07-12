@@ -2,20 +2,20 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <title>Zara AI Assistant</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Zara AI</title>
+    <style>
+        body { background-color: #0d1117; color: white; text-align: center; font-family: sans-serif; }
+        #splash-screen { margin-top: 200px; }
+        #app { display: none; }
+    </style>
 </head>
 <body>
-    <div id="splash-screen"><img src="assets/logo.png" alt="Zara"></div>
-    
-    <div id="app" style="display:none;">
-        <div id="owner-tag">Owner: KM Rafi Chowdhury</div>
-        <div id="main-interface">
-            <div id="character-display"></div> <!-- ২ডি ক্যারেক্টার এখানে থাকবে -->
-            <div id="chat-box"></div>
-            <button id="voice-btn">🎤 Speak to Zara</button>
-        </div>
+    <div id="splash-screen"><h1>Zara Loading...</h1></div>
+    <div id="app">
+        <div id="chat-box"></div>
+        <button id="voice-btn">🎤 কথা বলুন</button>
     </div>
-    <script src="script.js"></script>
+    <!-- এখানে type="module" দেওয়া খুব জরুরি -->
+    <script type="module" src="script.js"></script>
 </body>
 </html>
